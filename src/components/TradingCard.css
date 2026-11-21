@@ -1,0 +1,303 @@
+.trading-card {
+  --card-accent: #c8102e;
+  width: min(100%, 310px);
+  aspect-ratio: 5 / 7;
+  perspective: 1200px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+.trading-card:focus-visible .trading-card-inner {
+  box-shadow: 0 0 0 3px var(--card-accent), 0 18px 36px rgba(0, 0, 0, 0.5);
+}
+
+.trading-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  transform-style: preserve-3d;
+  transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.25s ease;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.45);
+}
+
+@media (hover: hover) {
+  .trading-card:hover .trading-card-inner:not(.is-flipped) {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.55);
+  }
+}
+
+.trading-card-inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.trading-card-face {
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* ---------- FRONT FACE ---------- */
+
+.trading-card-front {
+  background: #111827;
+}
+
+.trading-card-photo {
+  position: absolute;
+  inset: 2.8% 4%;
+  width: 92%;
+  height: 94.4%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+}
+
+.trading-card-photo-fallback {
+  position: absolute;
+  inset: 2.8% 4%;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at 50% 35%, #27272a 0%, #111827 75%);
+  color: rgba(255, 255, 255, 0.22);
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.trading-card-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.trading-card-flip-hint {
+  position: absolute;
+  top: 5.5%;
+  right: 7%;
+  padding: 0.22rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(17, 24, 39, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+/* Aligned to the SVG bottom-right dark bar (x: 173..480, y: 604..680 on 500x700) */
+.trading-card-nameplate {
+  position: absolute;
+  left: 37%;
+  right: 5.5%;
+  bottom: 3.1%;
+  height: 10.6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+  pointer-events: none;
+}
+
+.trading-card-name {
+  margin: 0;
+  color: #ffffff;
+  font-size: 0.98rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.trading-card-year {
+  margin-top: 0.12rem;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ---------- BACK FACE ---------- */
+
+.trading-card-back {
+  transform: rotateY(180deg);
+  background: #18181b;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.trading-card-back-inner {
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 2px solid var(--card-accent);
+  background: linear-gradient(180deg, #151922 0%, #0f1218 100%);
+  padding: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  color: #f4f4f5;
+}
+
+.trading-card-back-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.trading-card-back-title-group {
+  min-width: 0;
+}
+
+.trading-card-back-award {
+  display: block;
+  color: var(--card-accent);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.trading-card-back-name {
+  margin: 0.1rem 0 0;
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #ffffff;
+}
+
+.trading-card-back-year {
+  display: inline-block;
+  margin-top: 0.15rem;
+  font-size: 0.72rem;
+  color: #a1a1aa;
+  font-weight: 600;
+}
+
+.trading-card-back-logo {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid var(--card-accent);
+  display: grid;
+  place-items: center;
+}
+
+.trading-card-back-logo img {
+  width: 72%;
+  height: 72%;
+  object-fit: contain;
+}
+
+.trading-card-back-body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding-right: 0.15rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+.trading-card-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.45rem;
+}
+
+.trading-card-stat {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 8px;
+  padding: 0.45rem 0.55rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.trading-card-stat.is-wide {
+  grid-column: 1 / -1;
+}
+
+.trading-card-stat-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #a1a1aa;
+}
+
+.trading-card-stat-value {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-variant-numeric: tabular-nums;
+}
+
+.trading-card-highlights {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.trading-card-highlight {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #f4f4f5;
+  background: color-mix(in srgb, var(--card-accent) 22%, #18181b);
+  border: 1px solid color-mix(in srgb, var(--card-accent) 55%, transparent);
+  border-radius: 999px;
+  padding: 0.22rem 0.6rem;
+  line-height: 1.25;
+}
+
+.trading-card-bio {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.48;
+  color: #d4d4d8;
+}
+
+.trading-card-back-footer {
+  text-align: center;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #71717a;
+  padding-top: 0.35rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trading-card-inner {
+    transition: none;
+  }
+}
