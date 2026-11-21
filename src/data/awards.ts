@@ -35,7 +35,7 @@ export const AWARDS: Award[] = [
         {
           id: "wolverine-w-alayna",
           name: "Alayna",
-          photoUrl: "/images/2026/alayna.webp",
+          photoUrl: "/images/Alayna.webp",
           bio: "A supportive and caring leader who has continually worked to ensure every woman on the team feels like they have a purpose and belong. She's also helped the team focus on serving the community as the primary organizer of the team's involvement in the campus serve day and her own church's serve day.",
           stats: [
             { label: "6K PR", value: "24:46.1" },
@@ -46,7 +46,7 @@ export const AWARDS: Award[] = [
         {
           id: "wolverine-w-grace",
           name: "Grace",
-          photoUrl: "/images/2026/grace.webp",
+          photoUrl: "/images/Grace.webp",
           bio: "Kind and supportive, Grace has been a believer in her team's potential from the start and has approached each workout and run with joy. She's also been consistently pursuing the Lord and truly uses the sport as a way to explore and deepen her faith.",
           stats: [
             { label: "6K PR", value: "28:18.4" },
@@ -56,7 +56,7 @@ export const AWARDS: Award[] = [
         {
           id: "wolverine-w-stella",
           name: "Stella",
-          photoUrl: "/images/2026/stella.webp",
+          photoUrl: "/images/Stella.webp",
           bio: "Despite many health struggles throughout the season, she has been consistently positive in her outlook and supportive of her teammates. Her hard work through the summer translating early in the season was integral to the women's success as a team, as she was a major part of the team seeing for themselves the full extent of their potential and beginning to fully believe in how good they could be. She also may be the only athlete I've seen that can actually mentally push herself beyond the limits of her own body just for the love of competing.",
           stats: [{ label: "6K PR", value: "24:47.9" }],
           highlights: ["PAC Sportsmanship Team"],
@@ -66,7 +66,7 @@ export const AWARDS: Award[] = [
         {
           id: "wolverine-m-josh",
           name: "Josh",
-          photoUrl: "/images/2026/josh.webp",
+          photoUrl: "/images/Josh.webp",
           bio: "Passionate about the sport and does everything he's asked and more to continue to improve. He doesn't skip any of the small details and truly believes in his own ability and the team's ability to be able to perform at a high level. This belief and attention to detail has not only led to consistent improvement individually but has been an example to the team of how to be a student of the sport and give full attention to doing what's required to compete at the highest level.",
           stats: [
             { label: "8K PR", value: "27:58.2" },
@@ -78,7 +78,7 @@ export const AWARDS: Award[] = [
           id: "wolverine-m-carter",
           name: "Carter",
           classYear: "Freshman",
-          photoUrl: "/images/2026/carter.webp",
+          photoUrl: "/images/Carter.webp",
           bio: "As a freshman, he has already demonstrated a strong desire to continue to grow deeper in his faith as well as the work ethic needed to be the best version of himself as an athlete. He's seen consistent improvement and taken risks in workouts and races to push himself to a higher level.",
           stats: [
             { label: "8K PR", value: "26:58.8" },
@@ -91,7 +91,7 @@ export const AWARDS: Award[] = [
           id: "wolverine-m-james",
           name: "James",
           classYear: "Senior",
-          photoUrl: "/images/2026/james.webp",
+          photoUrl: "/images/James.webp",
           bio: "One of the most respected members of the men's team by his teammates for all four years he's been a member of the program for his character and faith. In turn, he is very loyal to his teammates and friends. His leadership as chaplain and now captain has been integral in establishing a culture and expectation of greater excellence on the men's team. He's also the lone member of the senior class to have been a varsity runner all 4 years of his career.",
           stats: [
             { label: "8K PR", value: "27:10.1" },
@@ -114,7 +114,7 @@ export const AWARDS: Award[] = [
         {
           id: "mi-w-rebekah-burger",
           name: "Rebekah Burger",
-          photoUrl: "/images/2026/rebekah-burger.webp",
+          photoUrl: "/images/Rebekah.webp",
           stats: [
             { label: "6K", value: "24:17.8 → 22:20.1" },
             { label: "5K", value: "18:59.3 → 17:57.4" },
@@ -125,14 +125,14 @@ export const AWARDS: Award[] = [
         {
           id: "mi-w-emily-king",
           name: "Emily King",
-          photoUrl: "/images/2026/emily-king.webp",
+          photoUrl: "/images/Emily.webp",
           stats: [{ label: "5K", value: "23:51.6 → 21:15.5" }],
           highlights: ["First year competing"],
         },
         {
           id: "mi-w-lily-lawson",
           name: "Lily Lawson",
-          photoUrl: "/images/2026/lily-lawson.webp",
+          photoUrl: "/images/Lily.webp",
           stats: [
             { label: "6K", value: "28:20.2 → 25:09.0" },
             { label: "PACs", value: "68th → 65th" },
@@ -143,7 +143,7 @@ export const AWARDS: Award[] = [
         {
           id: "mi-m-jacob-call",
           name: "Jacob Call",
-          photoUrl: "/images/2026/jacob-call.webp",
+          photoUrl: "/images/Call.webp",
           stats: [
             { label: "8K", value: "31:08.0 → 27:55.3" },
             { label: "5K", value: "16:56.2 → 16:26.3" },
@@ -153,7 +153,7 @@ export const AWARDS: Award[] = [
         {
           id: "mi-m-sam-elston",
           name: "Sam Elston",
-          photoUrl: "/images/2026/sam-elston.webp",
+          photoUrl: "/images/Sam.webp",
           stats: [
             { label: "8K", value: "29:01.1 → 26:45.4" },
             { label: "5K", value: "16:28.6 → 15:55.4" },
@@ -163,7 +163,7 @@ export const AWARDS: Award[] = [
         {
           id: "mi-m-isaiah-weindelmayer",
           name: "Isaiah Weindelmayer",
-          photoUrl: "/images/2026/isaiah-weindelmayer.webp",
+          photoUrl: "/images/Isaiah.webp",
           stats: [
             { label: "8K", value: "30:31.8 → 28:47.9" },
             { label: "5K", value: "17:40.3 → 17:12.4" },
@@ -185,7 +185,7 @@ export const AWARDS: Award[] = [
           id: "foy-w-ruth-brownlee",
           name: "Ruth Brownlee",
           classYear: "Freshman",
-          photoUrl: "/images/2026/ruth-brownlee.webp",
+          photoUrl: "/images/Ruth.webp",
           stats: [
             { label: "6K", value: "25:45.7" },
             { label: "5K", value: "19:57.0" },
@@ -197,7 +197,7 @@ export const AWARDS: Award[] = [
           id: "foy-w-lily-harrington",
           name: "Lily Harrington",
           classYear: "Freshman",
-          photoUrl: "/images/2026/lily-harrington.webp",
+          photoUrl: "/images/Lily.webp",
           stats: [
             { label: "6K", value: "24:41.5" },
             { label: "5K", value: "19:51.0" },
@@ -209,7 +209,7 @@ export const AWARDS: Award[] = [
           id: "foy-w-josie-jones",
           name: "Josie Jones",
           classYear: "Freshman",
-          photoUrl: "/images/2026/josie-jones.webp",
+          photoUrl: "/images/Josie.webp",
           stats: [
             { label: "6K", value: "22:09.2" },
             { label: "5K", value: "17:53.2" },
@@ -227,7 +227,7 @@ export const AWARDS: Award[] = [
           id: "foy-m-isaac-burtt",
           name: "Isaac Burtt",
           classYear: "Freshman",
-          photoUrl: "/images/2026/isaac-burtt.webp",
+          photoUrl: "/images/Burtt.webp",
           stats: [
             { label: "8K", value: "26:25.3" },
             { label: "5K", value: "15:34.3" },
@@ -240,7 +240,7 @@ export const AWARDS: Award[] = [
           id: "foy-m-isaac-esh",
           name: "Isaac Esh",
           classYear: "Freshman",
-          photoUrl: "/images/2026/isaac-esh.webp",
+          photoUrl: "/images/Esh.webp",
           stats: [{ label: "8K", value: "26:48.3" }],
           highlights: ["Regional Alternate"],
         },
@@ -248,7 +248,7 @@ export const AWARDS: Award[] = [
           id: "foy-m-carson-wilt",
           name: "Carson Wilt",
           classYear: "Freshman",
-          photoUrl: "/images/2026/carson-wilt.webp",
+          photoUrl: "/images/Carson.webp",
           stats: [
             { label: "8K", value: "26:39.1" },
             { label: "Region", value: "70th" },
@@ -272,7 +272,7 @@ export const AWARDS: Award[] = [
         {
           id: "mvp-w-rebekah-burger",
           name: "Rebekah Burger",
-          photoUrl: "/images/2026/rebekah-burger.webp",
+          photoUrl: "/images/Rebekah.webp",
           stats: [
             { label: "6K", value: "22:20.1" },
             { label: "PACs", value: "3rd" },
@@ -284,7 +284,7 @@ export const AWARDS: Award[] = [
           id: "mvp-w-josie-jones",
           name: "Josie Jones",
           classYear: "Freshman",
-          photoUrl: "/images/2026/josie-jones.webp",
+          photoUrl: "/images/Josie2.webp",
           stats: [
             { label: "6K", value: "22:09.2" },
             { label: "PACs", value: "4th" },
@@ -299,7 +299,7 @@ export const AWARDS: Award[] = [
         {
           id: "mvp-w-cayla-lawrence",
           name: "Cayla Lawrence",
-          photoUrl: "/images/2026/cayla-lawrence.webp",
+          photoUrl: "/images/Cayla.webp",
           stats: [
             { label: "6K", value: "21:55.4" },
             { label: "PACs", value: "2nd" },
@@ -316,7 +316,7 @@ export const AWARDS: Award[] = [
           id: "mvp-m-isaac-burtt",
           name: "Isaac Burtt",
           classYear: "Freshman",
-          photoUrl: "/images/2026/isaac-burtt.webp",
+          photoUrl: "/images/Burtt2.webp",
           stats: [
             { label: "8K", value: "26:25.3" },
             { label: "PACs", value: "8th" },
@@ -330,7 +330,7 @@ export const AWARDS: Award[] = [
         {
           id: "mvp-m-colsen-frank",
           name: "Colsen Frank",
-          photoUrl: "/images/2026/colsen-frank.webp",
+          photoUrl: "/images/Colsen.webp",
           stats: [
             { label: "8K", value: "25:24.0" },
             { label: "PACs", value: "4th" },
@@ -344,7 +344,7 @@ export const AWARDS: Award[] = [
         {
           id: "mvp-m-kaiden-williams",
           name: "Kaiden Williams",
-          photoUrl: "/images/2026/kaiden-williams.webp",
+          photoUrl: "/images/Kaiden.webp",
           stats: [
             { label: "8K", value: "26:31.3" },
             { label: "PACs", value: "14th" },
