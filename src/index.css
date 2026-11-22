@@ -20,7 +20,7 @@ body {
 }
 
 .page-container {
-  max-width: 1260px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 2.5rem 1.25rem 4rem;
 }
@@ -148,7 +148,7 @@ body {
   width: 78%;
   max-width: 210px;
   height: auto;
-  opacity: 0.11;
+  opacity: 0.22;
   color: var(--award-accent);
   transform: translateY(24px);
   transition: opacity 0.25s ease, transform 0.3s ease;
@@ -158,9 +158,10 @@ body {
 .award-card-bg-img {
   mix-blend-mode: screen;
 }
+
 .award-card:hover .award-card-bg-img,
 .award-card:hover .award-card-bg-svg {
-  opacity: 0.2;
+  opacity: 0.35;
   transform: translateY(16px) scale(1.06);
 }
 
@@ -204,8 +205,6 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  padding-top: 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 /* ---------- AWARD PAGE ---------- */
@@ -290,5 +289,5 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.25rem;
 }

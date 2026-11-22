@@ -41,8 +41,11 @@ export const AWARDS: Award[] = [
           photoUrl: "/images/ErikaAbigail.webp",
           bio: "Nominated as a pair, Abigail and Erika continually stepped up throughout the season to finish as the final scorers for the team, leading the team to succes through the regular and post season. They’ve worked hard and have been a positiveinfluence on the rest of the women with their positive personalities and desire to compete at a high level.",
           stats: [
-          ]
-
+            { label: "6K PR", value: "24:19.0/24:27.6" },
+            { label: "5K PR", value: "19:42.2" },
+            { label: "PACs", value: "37th/36th" },
+            { label: "Region", value: "95th/102th" },
+          ],
         },
         {
           id: "wolverine-w-alayna",
@@ -55,6 +58,7 @@ export const AWARDS: Award[] = [
             { label: "5K PR", value: "20:02.7" },
             { label: "PACs", value: "46th" },
           ],
+          highlights: ["Team Captain"],
         },
         {
           id: "wolverine-w-grace",
@@ -89,6 +93,7 @@ export const AWARDS: Award[] = [
             { label: "5K PR", value: "16:14.5" },
             { label: "PACs", value: "25th" },
           ],
+          highlights: ["Regional Alternate"],
         },
         {
           id: "wolverine-m-carter",
@@ -114,7 +119,7 @@ export const AWARDS: Award[] = [
             { label: "PACs", value: "16th" },
             { label: "Region", value: "88th" },
           ],
-          highlights: ["4-Year Varsity Runner", "Team Captain & Former Chaplain"],
+          highlights: ["Team Captain", "All PAC - Honorable Mention"]
         },
       ],
     },
@@ -138,6 +143,7 @@ export const AWARDS: Award[] = [
             { label: "PACs", value: "20th → 3rd" },
             { label: "Region", value: "67th → 24th" },
           ],
+          highlights: ["All PAC - 1st Team", "All-Region", "15th in Grove City History (6K)"],
         },
         {
           id: "mi-w-emily-king",
@@ -169,6 +175,7 @@ export const AWARDS: Award[] = [
             { label: "5K", value: "16:56.2 → 16:26.3" },
             { label: "PACs", value: "39th" },
           ],
+          highlights: ["Made Spaghetti For The Men's Team"],
         },
         {
           id: "mi-m-sam-elston",
@@ -180,6 +187,7 @@ export const AWARDS: Award[] = [
             { label: "5K", value: "16:28.6 → 15:55.4" },
             { label: "PACs", value: "24th → 18th" },
           ],
+          highlights: ["Team Chaplain"],
         },
         {
           id: "mi-m-isaiah-weindelmayer",
@@ -226,6 +234,7 @@ export const AWARDS: Award[] = [
             { label: "PACs", value: "48th" },
             { label: "Region", value: "111th" },
           ],
+          highlights: ["Regional Team"],
         },
         {
           id: "foy-w-josie-jones",
@@ -237,10 +246,10 @@ export const AWARDS: Award[] = [
             { label: "5K", value: "17:53.2" },
           ],
           highlights: [
-            "10th in Grove City History (6K)",
             "First Team All-PAC",
-            "All-Region",
             "PAC Newcomer of the Year",
+            "All-Region",
+            "10th in Grove City History (6K)",
           ],
         },
       ],
@@ -256,15 +265,15 @@ export const AWARDS: Award[] = [
             { label: "PACs", value: "8th" },
             { label: "Region", value: "49th" },
           ],
-          highlights: ["16th in Grove City History (8K)", "Team #2"],
+          highlights: ["All PAC - 2nd Team", "Regional Team", "16th in Grove City History (8K)"],
         },
         {
           id: "foy-m-isaac-esh",
           name: "Isaac Esh",
           classYear: "Freshman",
           photoUrl: "/images/Esh.webp",
-          stats: [{ label: "8K", value: "26:48.3" }],
-          highlights: ["Regional Alternate"],
+          stats: [{ label: "8K", value: "26:48.3" }, { label: "PACs", value: "42nd" }],
+          highlights: ["Stud"],
         },
         {
           id: "foy-m-carson-wilt",
@@ -276,8 +285,9 @@ export const AWARDS: Award[] = [
             { label: "Region", value: "70th" },
           ],
           highlights: [
+            "All PAC - Honorable Mention",
+            "Regional Team",
             "24th in Grove City History (8K)",
-            "Honorable Mention All-PAC",
           ],
         },
       ],
@@ -301,7 +311,7 @@ export const AWARDS: Award[] = [
             { label: "PACs", value: "3rd" },
             { label: "Region", value: "24th" },
           ],
-          highlights: ["15th in Grove City History (6K)"],
+          highlights: ["All PAC - 1st Team", "All-Region", "15th in Grove City History (6K)"],
         },
         {
           id: "mvp-w-josie-jones",
@@ -314,8 +324,10 @@ export const AWARDS: Award[] = [
             { label: "Region", value: "20th" },
           ],
           highlights: [
-            "10th in Grove City History (6K)",
+            "All PAC - 1st Team",
             "PAC Freshman of the Year",
+            "All-Region",
+            "10th in Grove City History (6K)",
             "Top Runner in 1 Meet",
           ],
         },
@@ -330,6 +342,8 @@ export const AWARDS: Award[] = [
             { label: "Region", value: "32nd" },
           ],
           highlights: [
+            "All PAC - 1st Team",
+            "All-Region",
             "8th in Grove City History (6K)",
             "Top Runner in 4 Meets",
           ],
@@ -347,6 +361,8 @@ export const AWARDS: Award[] = [
             { label: "Region", value: "49th" },
           ],
           highlights: [
+            "All PAC - 2nd Team",
+            "Regional Team",
             "16th in Grove City History (8K)",
             "Team #2 at PACs & Regionals",
           ],
@@ -362,6 +378,8 @@ export const AWARDS: Award[] = [
             { label: "Region", value: "34th" },
           ],
           highlights: [
+            "All PAC - 1st Team",
+            "All-Region",
             "4th in Grove City History (8K)",
             "Top Runner in Every Meet",
           ],
@@ -376,7 +394,7 @@ export const AWARDS: Award[] = [
             { label: "PACs", value: "14th" },
             { label: "Region", value: "67th" },
           ],
-          highlights: ["21st in Grove City History (8K)"],
+          highlights: ["All PAC - 2nd Team", "Regional Team", "21st in Grove City History (8K)"],
         },
       ],
     },
