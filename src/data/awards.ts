@@ -35,6 +35,16 @@ export const AWARDS: Award[] = [
     finalists: {
       women: [
         {
+          id: "wolverine-w-erikaabigail",
+          name: "Erika and Abigail",
+          classYear: "Sophomore/Junior",
+          photoUrl: "/images/ErikaAbigail.webp",
+          bio: "Nominated as a pair, Abigail and Erika continually stepped up throughout the season to finish as the final scorers for the team, leading the team to succes through the regular and post season. They’ve worked hard and have been a positiveinfluence on the rest of the women with their positive personalities and desire to compete at a high level.",
+          stats: [
+          ]
+
+        },
+        {
           id: "wolverine-w-alayna",
           name: "Alayna Bishop",
           classYear: "Senior",
@@ -141,7 +151,7 @@ export const AWARDS: Award[] = [
           id: "mi-w-lily-lawson",
           name: "Lily Lawson",
           classYear: "Junior",
-          photoUrl: "/images/Lily.webp",
+          photoUrl: "/images/Lawson.webp",
           stats: [
             { label: "6K", value: "28:20.2 → 25:09.0" },
             { label: "PACs", value: "68th → 65th" },
@@ -209,7 +219,7 @@ export const AWARDS: Award[] = [
           id: "foy-w-lily-harrington",
           name: "Lily Harrington",
           classYear: "Freshman",
-          photoUrl: "/images/Lily.webp",
+          photoUrl: "/images/Harrington.webp",
           stats: [
             { label: "6K", value: "24:41.5" },
             { label: "5K", value: "19:51.0" },
