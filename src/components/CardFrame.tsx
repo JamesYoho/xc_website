@@ -105,10 +105,10 @@ export function CardFrame() {
         <g filter={`url(#${shadowId})`}>
           <circle cx="115" cy="593" r="58" fill="#18181B" />
           <circle cx="115" cy="593" r="53" fill="var(--card-accent, #C8102E)" />
-          <circle cx="115" cy="593" r="47" fill="#000000" />
+          <circle cx="115" cy="593" r="47" fill="#18181B" />
 
           <image
-            href="/images/GroveCityLogo.png"
+            href="/images/GroveCityLogo.webp"
             x="77"
             y="555"
             width="76"
