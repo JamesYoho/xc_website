@@ -5,6 +5,7 @@ export function CardFrame() {
   const outerClipId = `card-outer-clip-${uid}`;
   const innerClipId = `card-inner-clip-${uid}`;
   const shadowId = `medallion-shadow-${uid}`;
+  const logoClipId = `medallion-logo-clip-${uid}`;
 
   return (
     <svg
@@ -15,6 +16,10 @@ export function CardFrame() {
       aria-hidden="true"
     >
       <defs>
+        <clipPath id={logoClipId}>
+          <circle cx="115" cy="593" r="46" />
+        </clipPath>
+
         <clipPath id={outerClipId}>
           <rect x="0" y="0" width="500" height="700" rx="24" />
         </clipPath>
@@ -100,16 +105,16 @@ export function CardFrame() {
         <g filter={`url(#${shadowId})`}>
           <circle cx="115" cy="593" r="58" fill="#18181B" />
           <circle cx="115" cy="593" r="53" fill="var(--card-accent, #C8102E)" />
-          <circle cx="115" cy="593" r="47" fill="#FFFFFF" />
-          <circle cx="115" cy="593" r="42" stroke="#E5E7EB" strokeWidth="1.5" />
+          <circle cx="115" cy="593" r="47" fill="#000000" />
 
           <image
             href="/images/GroveCityLogo.png"
-            x="78"
-            y="556"
-            width="74"
-            height="74"
+            x="77"
+            y="555"
+            width="76"
+            height="76"
             preserveAspectRatio="xMidYMid meet"
+            clipPath={`url(#${logoClipId})`}
           />
         </g>
       </g>

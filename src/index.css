@@ -43,12 +43,13 @@ body {
   display: grid;
   place-items: center;
   box-shadow: 0 8px 24px rgba(200, 16, 46, 0.25);
+  overflow: hidden;
 }
 
 .site-logo-badge img {
-  width: 72%;
-  height: 72%;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .site-eyebrow {
@@ -290,4 +291,10 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.25rem;
+}
+
+.trading-card-back-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
