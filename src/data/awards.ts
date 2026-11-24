@@ -298,7 +298,7 @@ export const AWARDS: Award[] = [
     title: "Most Valuable Runner",
     description:
       "Awarded to the top competitive performers leading the Wolverines through championship season.",
-    accentColor: "#D3AF37",
+    accentColor: "#8592A6",
     finalists: {
       women: [
         {
