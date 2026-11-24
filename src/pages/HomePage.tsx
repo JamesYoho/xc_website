@@ -82,7 +82,7 @@ export function HomePage() {
     <main className="page-container">
       <header className="site-header">
         <div className="site-logo-badge">
-          <img src="/images/GroveCityLogo.png" alt="Grove City College" />
+          <img src="/images/GroveCityLogo.webp" alt="Grove City College" />
         </div>
         <span className="site-eyebrow">Grove City Cross Country</span>
         <h1 className="site-title">End of Year Awards</h1>
